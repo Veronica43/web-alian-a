@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const user = document.getElementById("user").value;
     const pass = document.getElementById("pass").value;
 
-    fetch("https://web-alian-a.onrender.com/", {
+    fetch("https://web-alian-a.onrender.com/login", {
+      
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ user, pass })
