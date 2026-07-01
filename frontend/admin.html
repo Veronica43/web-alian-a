@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox">
+  <h2>Login Admin</h2>
+
+  <input id="user" placeholder="Usuari">
+  <input id="pass" type="password" placeholder="Contrasenya">
+
+  <button onclick="login()">Entrar</button>
+
+  <p id="error" style="color:red;"></p>
+</div>
+
+<!-- PANEL -->
+<div id="panel" style="display:none;">
+  <h1>Admin Panel</h1>
+
+  <button onclick="logout()">Logout</button>
+
+  <hr>
+
+  <h2>Crear Notícia</h2>
+  <input id="titolNoticia" placeholder="Títol">
+  <input id="contingutNoticia" placeholder="Contingut">
+  <button onclick="crearNoticia()">Crear Notícia</button>
+
+  <hr>
+
+  <h2>Crear Event</h2>
+  <input id="titolEvent" placeholder="Títol">
+  <button onclick="crearEvent()">Crear Event</button>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
