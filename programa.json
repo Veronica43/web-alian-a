@@ -1,0 +1,45 @@
+[
+  {
+    "id": "independencia",
+    "titulo": "Independència i país",
+    "resumen": "Defensa del país i la seva sobirania.",
+    "texto": "Declararem la independència i la defensarem fins assolir la plena sobirania del país amb garanties institucionals i democràtiques.",
+    "detalle":"loremkskskskskskskskskskkskskskskskskSom un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom. Som un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom."
+  },
+  {
+    "id": "economia",
+    "titulo": "Economia i indústria",
+    "resumen": "Impuls del teixit econòmic i industrial.",
+    "texto": "Pla per reforçar l'economia local, la indústria i la competitivitat del territori amb suport a empreses i emprenedors.",
+    "detalle":"loremkskskskskskskskskskkskskskskskskSom un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom. Som un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom."
+  },
+  {
+    "id": "immigracio",
+    "titulo": "Immigració i seguretat",
+    "resumen": "Gestió ordenada i seguretat ciutadana.",
+    "texto": "Polítiques de seguretat i control eficient dels fluxos migratoris amb respecte als drets i la convivència.",
+    "detalle":"loremkskskskskskskskskskkskskskskskskSom un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom. Som un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom."
+  },
+  {
+    "id": "societat",
+    "titulo": "Societat i família",
+    "resumen": "Protecció dels valors socials i familiars.",
+    "texto": "Suport a les famílies, educació de qualitat i cohesió social com a base del benestar col·lectiu.",
+    "detalle":"loremkskskskskskskskskskkskskskskskskSom un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom. Som un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom."
+  },
+  {
+    "id": "independencia",
+    "titulo": "Independència i país",
+    "resumen": "Defensa del país i la seva sobirania.",
+    "texto": "Declararem la independència i la defensarem fins assolir la plena sobirania del país amb garanties institucionals i democràtiques.",
+    "detalle":"loremkskskskskskskskskskkskskskskskskSom un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom. Som un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom."
+  },
+  {
+    "id": "economia",
+    "titulo": "Economia i indústria",
+    "resumen": "Impuls del teixit econòmic i industrial.",
+    "texto": "Pla per reforçar l'economia local, la indústria i la competitivitat del territori amb suport a empreses i emprenedors.","detalle":"loremkskskskskskskskskskkskskskskskskSom un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom. Som un projecte compromès amb el futur de Catalunya, la seva identitat, la seva economia i la seva seguretat. Treballem per una societat més forta, cohesionada i amb oportunitats per a tothom."
+  }
+
+
+]

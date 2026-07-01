@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aliança Catalana Amposta</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="logo" class="logo">
+      <span class="logo-text">Amposta</span>
+    </div>
+    
+    <!-- MENU FULLSCREEN -->
+     <div class="hamburger" id="hamburger">☰</div>
+
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="close-btn" id="closeBtn">✕</div>
+
+  <ul>
+
+    <li><a href="#quisom">Qui som</a></li>
+
+    <li><a href="#programa">Programa</a></li>
+    <li><a href="#noticies">Noticies</a></li>
+
+    <li><a href="#agenda">Agenda</a></li>
+
+    <li><a href="#participa">Participa</a></li>
+
+  </ul>
+
+</div>
+
+    <ul class="nav-links" id="navLinks">
+  <li><a href="#quisom">Qui som</a></li>
+  <li><a href="#programa">Programa</a></li>
+  <li><a href="#noticies">Noticies</a></li>
+  <li><a href="#agenda">Agenda</a></li>
+  <li><a href="#participa">Participa</a></li>
+</ul>
+   
+  </nav>
+
+  <!-- HERO VIDEO -->
+ <section class="hero">
+
+  <div class="video-container">
+
+    <video autoplay muted loop playsinline>
+      <source src="assets/amposta.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-text">
+     <h1><span>Defensem Amposta</span>
+     <span>Protegim el futur</span> </h1>
+      <p>Compromesos amb el país, la seguretat i el benestar dels ciutadans.</p>
+    </div>
+
+  </div>
+  <div class="separator"></div>
+
+</section>
+  <!-- QUI SOM -->
+<section id="quisom" class="quisom">
+  <div class="quisom-container">
+    <h2>Qui som</h2>
+    <p>
+      Som un projecte compromès amb el futur de Catalunya, la seva identitat,
+      la seva economia i la seva seguretat. Treballem per una societat més forta,
+      cohesionada i amb oportunitats per a tothom.
+      Som un projecte compromès amb el futur de Catalunya, la seva identitat,
+      la seva economia i la seva seguretat. Treballem per una societat més forta,
+      cohesionada i amb oportunitats per a tothom.
+    </p>
+  </div>
+</section>
+<div class="separator"></div>
+</header>
+
+<!-- PROGRAMA -->
+<section id="programa" class="programa">
+
+  <h1>Programa</h1>
+
+  <div class="cards"></div>
+
+</section>
+ <div class="separator"></div>
+
+ <div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">✕</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<!-- NOTICIES -->
+<section id="noticies" class="news">
+
+  <div class="container">
+    <h2>Notícies</h2>
+    
+
+    <!-- Aquí es cargaran les noticies auto JSON -->
+    <div class="news-container"></div>
+  </div>
+ 
+
+</section>
+<div class="separator"></div>
+
+
+<!-- AGENDA -->
+<section id="agenda" class="agenda">
+
+  <h2>Agenda</h2>
+
+  <div class="agenda-container"></div>
+
+</section>
+
+<div class="separator"></div>
+
+<!-- FORMULARIO -->
+<section id="participa" class="contacto">
+  <h2>Contacta amb nosaltres</h2>
+
+  <form>
+    <input type="text" placeholder="Nom" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Missatge" rows="5"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<div class="separator"></div>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <img src="assets/logo.png" class="footer-logo">
+
+  <div class="socials">
+
+  <!-- Facebook -->
+  <a href="#" class="social-icon" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="white">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="#" class="social-icon" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="white">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
+    </svg>
+  </a>
+
+  <!-- X (Twitter) -->
+  <a href="#" class="social-icon" aria-label="X">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="white">
+      <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.1L6.6 22H3.5l7.3-8.4L1 2h6.3l4.4 5.5L18.9 2z"/>
+    </svg>
+  </a>
+
+</div>
+
+  <p class="copyright">
+    © 2026 Aliança Catalana 
+  </p>
+
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script>
+    gsap.from(".hero-text span", {
+      y: 30,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.3
+    });
+
+    gsap.from(".hero-text p", {
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      delay: 0.8
+    });
+  </script>
+
+  <!-- TU SCRIPT SOLO UNA VEZ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
