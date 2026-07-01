@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const panel = document.getElementById("panel");
   const error = document.getElementById("error");
 
-  // 🔹 CHECK SESSIÓ (AMB TOKEN)
+  // 🔹 CHECK SESSIÓ (TOKEN)
   if (localStorage.getItem("token")) {
     loginBox.style.display = "none";
     panel.style.display = "block";
@@ -24,15 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
       body: JSON.stringify({ user, pass })
     })
     .then(res => {
-      if (!res.ok) throw new Error();
+      if (!res.ok) throw new Error("Login incorrecte");
       return res.json();
     })
     .then(data => {
       if (data.ok) {
 
-        // 🔥 GUARDEM TOKEN (IMPORTANT)
-       sessionStorage.setItem("token", data.token);
+        // 🔥 GUARDAR TOKEN
+        localStorage.setItem("token", data.token);
 
+        // 🔥 MOSTRAR PANEL
         loginBox.style.display = "none";
         panel.style.display = "block";
       }
@@ -62,9 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
         contingut: document.getElementById("contingutNoticia").value
       })
     })
-    .then(res => res.json())
-    .then(data => {
+    .then(res => {
+      if (!res.ok) throw new Error();
+      return res.json();
+    })
+    .then(() => {
       alert("Notícia creada ✔");
+    })
+    .catch(() => {
+      alert("Error creant notícia ❌");
     });
   };
 
@@ -80,9 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
         titol: document.getElementById("titolEvent").value
       })
     })
-    .then(res => res.json())
-    .then(data => {
+    .then(res => {
+      if (!res.ok) throw new Error();
+      return res.json();
+    })
+    .then(() => {
       alert("Event creat ✔");
+    })
+    .catch(() => {
+      alert("Error creant event ❌");
     });
   };
 
