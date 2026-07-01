@@ -11,7 +11,7 @@ const SECRET = "clau_super_secreta";
 // rutes
 const noticiesRoutes = require("./routes/noticies.routes");
 const eventsRoutes = require("./routes/events.routes");
-const programaRoutes = require("./routes/programa.routes");
+/*const programaRoutes = require("./routes/programa.routes");*/
 
 app.post("/login", (req, res) => {
   const { user, pass } = req.body;
@@ -43,7 +43,7 @@ app.listen(3000, () => {
 
 app.use("/noticies", noticiesRoutes);
 app.use("/events", eventsRoutes);
-app.use("/programa", programaRoutes);
+/*app.use("/programa", programaRoutes);*/
 app.use(cors({
   origin: "*"
 }));

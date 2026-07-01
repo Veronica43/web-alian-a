@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 🔹 CREAR NOTÍCIA
   window.crearNoticia = function () {
-    fetch("https://web-alian-a.onrender.com/", {
+    fetch("https://web-alian-a.onrender.com/noticies", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 🔹 CREAR EVENT
   window.crearEvent = function () {
-    fetch("https://web-alian-a.onrender.com/", {
+    fetch("https://web-alian-a.onrender.com/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

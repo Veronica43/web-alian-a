@@ -48,7 +48,7 @@ cards.forEach((card, index) => {
 /* =========================
    NOTÍCIES (BACKEND)
 ========================= */
-fetch("https://web-alian-a.onrender.com/")
+fetch("https://web-alian-a.onrender.com/noticies")
   .then(res => res.json())
   .then(data => {
 
@@ -81,7 +81,7 @@ fetch("https://web-alian-a.onrender.com/")
 /* =========================
    AGENDA / EVENTS (BACKEND)
 ========================= */
-fetch("https://web-alian-a.onrender.com/")
+fetch("https://web-alian-a.onrender.com/events")
   .then(res => res.json())
   .then(data => {
 
@@ -130,9 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalText = document.getElementById("modalText");
   const closeBtn = document.getElementById("closeModal");
 
-  fetch("https://web-alian-a.onrender.com/")
-    .then(res => res.json())
-    .then(data => {
+  fetch("./programa.json")
+  .then(res => res.json())
+  .then(data => {
 
       data.forEach(item => {
 
