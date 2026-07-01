@@ -44,7 +44,9 @@ app.listen(3000, () => {
 app.use("/noticies", noticiesRoutes);
 app.use("/events", eventsRoutes);
 app.use("/programa", programaRoutes);
-
+app.use(cors({
+  origin: "*"
+}));
 // prova
 app.get("/", (req, res) => {
   res.send("Backend funcionant 🚀");
