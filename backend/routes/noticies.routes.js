@@ -11,12 +11,13 @@ router.get("/", (req, res) => {
 
 // POST
 router.post("/", (req, res) => {
-  const nova = {
-    id: noticies.length + 1,
-    titol: req.body.titol,
-    contingut: req.body.contingut,
-    data: new Date()
-  };
+ const nova = {
+  id: noticies.length + 1,
+  titol: req.body.titol,
+  contingut: req.body.contingut,
+  data: new Date(),
+  imatge: req.body.imatge || "/assets/default.jpg"
+};
 
   noticies.push(nova);
   res.json(nova);

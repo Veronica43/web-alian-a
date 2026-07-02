@@ -61,7 +61,7 @@ fetch("https://web-alian-a.onrender.com/noticies")
     data.forEach(noticia => {
 
       const card = document.createElement("div");
-      card.classList.add("news-card");
+      card.classList.add("card");
 
       const fechaFormateada = new Date(noticia.data).toLocaleDateString("es-ES");
 
@@ -69,7 +69,9 @@ fetch("https://web-alian-a.onrender.com/noticies")
         <span class="news-date">${fechaFormateada}</span>
         <h3>${noticia.titol}</h3>
         <p>${noticia.contingut}</p>
+        <img src="${noticia.imatge}">
       `;
+         
 
       container.appendChild(card);
     });

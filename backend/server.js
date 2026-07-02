@@ -3,7 +3,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 
 const app = express();
-
+app.use("/assets", express.static("assets"));
 app.use(cors());
 app.use(express.json());
 const SECRET = "clau_super_secreta";
