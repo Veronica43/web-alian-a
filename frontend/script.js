@@ -66,10 +66,11 @@ fetch("https://web-alian-a.onrender.com/noticies")
       const fechaFormateada = new Date(noticia.data).toLocaleDateString("es-ES");
 
       card.innerHTML = `
+       <img src="${noticia.imatge}"class="news-img">
         <span class="news-date">${fechaFormateada}</span>
         <h3>${noticia.titol}</h3>
         <p>${noticia.contingut}</p>
-        <img src="${noticia.imatge}"class="news-img">
+       
       `;
          
 
