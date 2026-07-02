@@ -144,7 +144,15 @@ section h2 {
   overflow: hidden;
   border-radius: 0;
 }
+.hero img {
 
+  width: 100%;
+
+  height: 400px;
+
+  object-fit: cover;
+
+}
 .video-container video {
   position: absolute;
   top: 50%;
@@ -163,11 +171,6 @@ section h2 {
   z-index: 1;
 }
 
-.hero-img {
-  width: 100%;
-  height: 100vh; /* ocupa toda la pantalla */
-  object-fit: cover;
-}
 .hero-text {
   position: absolute;
   top: 50%;
@@ -297,12 +300,23 @@ section h2 {
   max-width: 1100px;
   margin: auto;
 }
+#news-container {
+
+  padding: 20px;
+
+}
+/* IMAGEN */
+
 .news-img {
-  width: 100%;        /* ocupa el ancho del contenedor */
-  height: 200px;      /* altura fija */
-  object-fit: cover;  /* recorta sin deformar */
-  border-radius: 8px; /* opcional, queda más bonito */
+
+  width: 100%;
+
+  height: 250px;
+
+  object-fit: cover;
+
   display: block;
+
 }
 /*.news-card {
   background: #0F4D81;
@@ -316,7 +330,52 @@ section h2 {
 .news-card:hover {
   transform: translateY(-5px);
 }*/
+.noticia {
 
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  margin: 20px auto;
+
+  max-width: 600px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+/* CONTENIDO */
+
+.noticia span {
+
+  display: block;
+
+  font-size: 12px;
+
+  color: gray;
+
+  margin: 10px 15px 0;
+
+}
+
+.noticia h3 {
+
+  margin: 10px 15px;
+
+  font-size: 18px;
+
+}
+
+.noticia p {
+
+  margin: 0 15px 15px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+}
 .news-link {
   color: white;
   text-decoration: underline;
@@ -429,4 +488,49 @@ section h2 {
   .hero-text p {
     font-size: 14px;
   }
+}
+@media (max-width: 600px) {
+
+  /* HERO CUADRADO */
+
+  .hero img {
+
+    aspect-ratio: 1 / 1;
+
+    height: auto;
+
+  }
+
+  /* IMÁGENES NOTICIAS CUADRADAS */
+
+  .news-img {
+
+    aspect-ratio: 1 / 1;
+
+    height: auto;
+
+  }
+
+  /* TARJETAS MÁS COMPACTAS */
+
+  .noticia {
+
+    margin: 10px;
+
+  }
+
+  /* TEXTO MÁS AJUSTADO */
+
+  .noticia h3 {
+
+    font-size: 16px;
+
+  }
+
+  .noticia p {
+
+    font-size: 13px;
+
+  }
+
 }
