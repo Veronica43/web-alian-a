@@ -297,7 +297,13 @@ section h2 {
   max-width: 1100px;
   margin: auto;
 }
-
+.news-img {
+  width: 100%;        /* ocupa el ancho del contenedor */
+  height: 200px;      /* altura fija */
+  object-fit: cover;  /* recorta sin deformar */
+  border-radius: 8px; /* opcional, queda más bonito */
+  display: block;
+}
 /*.news-card {
   background: #0F4D81;
   color: white;
