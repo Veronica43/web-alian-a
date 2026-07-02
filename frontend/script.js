@@ -69,7 +69,7 @@ fetch("https://web-alian-a.onrender.com/noticies")
         <span class="news-date">${fechaFormateada}</span>
         <h3>${noticia.titol}</h3>
         <p>${noticia.contingut}</p>
-        <img src="${noticia.imatge}">
+        <img src="${noticia.imatge}"class="news-img">
       `;
          
 
